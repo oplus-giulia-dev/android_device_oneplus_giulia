@@ -13,7 +13,7 @@ DEVICE_PATH := device/oneplus/waffle
 TARGET_OTA_ASSERT_DEVICE := OP5929L1,OP595DL1
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 640
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus/waffle.config
