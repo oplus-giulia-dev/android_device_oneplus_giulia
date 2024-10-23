@@ -2,8 +2,8 @@
 bluetooth.device.default_name=OnePlus 12
 
 # Graphics
-ro.surface_flinger.set_idle_timer_ms=250
-ro.surface_flinger.set_touch_timer_ms=300
+ro.surface_flinger.set_idle_timer_ms=60
+ro.surface_flinger.set_touch_timer_ms=120
 
 # USB
 vendor.usb.product_string=OnePlus 12
