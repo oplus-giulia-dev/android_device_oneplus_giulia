@@ -213,7 +213,7 @@ odm/etc/sensor/config/kailua_mtp_pocket.json
 odm/etc/sensor/config/kailua_mtp_sx933x_0.json
 odm/etc/sensor/config/kailua_mtp_sx933x_down_0.json
 odm/etc/sensor/config/lux_aod.json
-odm/etc/sensor/config/salami_qrd_ois_system.json
+odm/etc/sensor/config/waffle_qrd_ois_system.json
 odm/etc/sensor/sensor_config.json
 
 # Touchscreen firmware

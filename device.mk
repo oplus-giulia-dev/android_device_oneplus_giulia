@@ -31,7 +31,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/oneplus/sm8550-common/common.mk)
+$(call inherit-product, device/oneplus/sm8650-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/salami/salami-vendor.mk)
+$(call inherit-product, vendor/oneplus/waffle/waffle-vendor.mk)

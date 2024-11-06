@@ -14,7 +14,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/oneplus/sm8550-common',
+    'vendor/oneplus/sm8650-common',
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -23,7 +23,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'salami',
+    'waffle',
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
@@ -32,6 +32,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm8550-common', module.vendor
+        module, 'sm8650-common', module.vendor
     )
     utils.run()
