@@ -23,7 +23,7 @@
 #endif
 
 uint32_t getUdfpsDimZOrder(uint32_t z) {
-    return 0x41000005;
+    return z;
 }
 
 uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
