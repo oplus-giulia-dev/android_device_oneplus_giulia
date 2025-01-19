@@ -1,0 +1,10 @@
+cc_library_static {
+    name: "libudfps_extension.giulia",
+    srcs: ["UdfpsExtension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger/CompositionEngine/include",
+    ],
+    header_libs: [
+        "generated_kernel_headers",
+    ],
+}

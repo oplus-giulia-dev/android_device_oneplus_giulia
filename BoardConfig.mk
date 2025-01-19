@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := OP5D3BL1,OP5D2BL1
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //device/oneplus/giulia:libudfps_extension.giulia
+
 # Kernel
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_SEPARATED_DTBO := true
