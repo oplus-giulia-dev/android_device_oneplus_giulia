@@ -23,8 +23,8 @@ PRODUCT_MODEL := CPH2449
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="CPH2449EEA-user 15 TP1A.220905.001 T.R4T3.1c0b52f-1cafa-1cafb release-keys" \
-    BuildFingerprint=OnePlus/CPH2449EEA/OP594DL1:15/TP1A.220905.001/T.R4T3.1c0b52f-1cafa-1cafb:user/release-keys \
+    BuildDesc="CPH2449EEA-user 15 TP1A.220905.001 T.R4T3.1c97c78-1_1 release-keys" \
+    BuildFingerprint=OnePlus/CPH2449EEA/OP594DL1:15/TP1A.220905.001/T.R4T3.1c97c78-1_1:user/release-keys \
     DeviceName=OP594DL1 \
     DeviceProduct=CPH2449 \
     SystemDevice=OP594DL1 \
