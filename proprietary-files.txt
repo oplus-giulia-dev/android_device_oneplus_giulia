@@ -7,6 +7,13 @@ odm/etc/acdbdata/FTM/acdb_cal.acdb
 odm/etc/acdbdata/FTM/workspaceFileXml.qwsp
 odm/etc/acdbdata/acdb_cal.acdb
 
+# Audio configs
+odm/etc/mixer_paths.xml
+odm/etc/resourcemanager.xml
+odm/etc/usecaseKvManager.xml
+vendor/etc/card-defs.xml
+vendor/etc/usecaseKvManager.xml
+
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 
