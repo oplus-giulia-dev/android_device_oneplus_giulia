@@ -1,11 +1,12 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 11 (CPH2449_15.0.0.600(EX01)).
+## are from OnePlus 12 (CPH2581_15.0.0.510(EX01)).
 
 abl.img;AB
 aop.img;AB
 aop_config.img;AB
 bluetooth.img;AB
 cpucp.img;AB
+cpucp_dtb.img;AB
 devcfg.img;AB
 dsp.img;AB
 engineering_cdt.img;AB
