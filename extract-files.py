@@ -15,6 +15,10 @@ from extract_utils.main import (
 
 namespace_imports = [
     'vendor/oneplus/sm8650-common',
+    'hardware/qcom-caf/sm8650',
+    'hardware/oplus',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -27,11 +31,8 @@ module = ExtractUtilsModule(
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
-    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device_with_common(
-        module, 'sm8650-common', module.vendor
-    )
+    utils = ExtractUtils.device(module)
     utils.run()
