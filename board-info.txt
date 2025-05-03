@@ -1,1 +1,1 @@
-require board=pineapple|OP5D3BL1
+require board=pineapple|OP5D3BL1|OP5D2BL1

@@ -10,7 +10,7 @@ include device/oneplus/sm8650-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oneplus/giulia
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP5D3BL1
+TARGET_OTA_ASSERT_DEVICE := OP5D3BL1,OP5D2BL1
 
 # Display
 TARGET_SCREEN_DENSITY := 420
