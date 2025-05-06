@@ -1420,6 +1420,10 @@ odm/vendor/firmware/uff_spi.b07
 odm/vendor/firmware/uff_spi.b08
 odm/vendor/firmware/uff_spi.mdt
 
+# NFC
+odm/etc/nfc/libnfc-mtp-SN220.conf_23867:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_23867:vendor/etc/libnfc-nci.conf
+
 # Sensors config
 odm/etc/sensor/config/giulia_qrd_ois_system.json
 odm/etc/sensor/config/json_list
