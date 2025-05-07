@@ -399,11 +399,11 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0,80
-        M -42,80
-        A 34,34 90 1,0 42,80
-        A 34,34 90 1,0 -42,80
-        Z
+         M 0,79
+         M -35,79
+         A 35,35 0 1,0 35,79
+         A 35,35 0 1,0 -35,79
+         Z
     </string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
@@ -413,11 +413,11 @@
          config_mainBuiltInDisplayCutout
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M -38,0
-        L -38,160
-        L 38,160
-        L 38,0
-        Z
+         M -50,0
+         H 50
+         V 100
+         H -50
+         Z
     </string>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
