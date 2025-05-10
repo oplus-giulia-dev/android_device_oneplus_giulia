@@ -1391,7 +1391,6 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 odm/firmware/fastchg/23867/charging_hyper_mode_config.txt
 odm/firmware/fastchg/bms_heating_config.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
-odm/firmware/fastchg/silicon_x24_smart_chg_config_table.txt
 odm/firmware/fastchg/smart_chg_config_table.txt
 
 # Display calibration data
