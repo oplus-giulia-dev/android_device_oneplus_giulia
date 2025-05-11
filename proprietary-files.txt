@@ -900,7 +900,6 @@ odm/lib64/libFaceBeautyJni.so
 odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFilterWrapper.so
-odm/lib64/libGaiaClient_vnd.so
 odm/lib64/libHDRDetection.so
 odm/lib64/libHIS.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
@@ -923,7 +922,6 @@ odm/lib64/libPlatformValidatorShared.so
 odm/lib64/libPolarrRender.so
 odm/lib64/libPreviewDecisionOld.so
 odm/lib64/libRedeyeReduce.so
-odm/lib64/libSNPE.so
 odm/lib64/libSnpeHta.so;FIX_SONAME
 odm/lib64/libSnpeHtpPrepare.so
 odm/lib64/libSnpeHtpV75Stub.so
@@ -949,9 +947,9 @@ odm/lib64/libancbase_segbase.so
 odm/lib64/libancbase_segment.so
 odm/lib64/libancbase_segmulti.so
 odm/lib64/libapsexif.so
-odm/lib64/libapsjpeg.so
 odm/lib64/libapspng.so
 odm/lib64/libapsyuv.so
+odm/lib64/libarc.fusion.so
 odm/lib64/libarcsoft_distortion_correction.so
 odm/lib64/libarcsoft_dual_sat.so
 odm/lib64/libarcsoft_dual_zoomtranslator.so
@@ -972,7 +970,6 @@ odm/lib64/libarcsoft_low_light_hdr.so
 odm/lib64/libarcsoft_mcxmflpolicy.so
 odm/lib64/libarcsoft_merge_hdr_denoise_api.so
 odm/lib64/libarcsoft_preview_antibanding.so
-odm/lib64/libarcsoft_qnnhtp.so
 odm/lib64/libarcsoft_scbokeh_video.so
 odm/lib64/libarcsoft_smart_denoise.so
 odm/lib64/libarcsoft_smart_denoise_v4.so
@@ -986,7 +983,6 @@ odm/lib64/libarcsoft_turbo_hdr_raw_front.so
 odm/lib64/libarcsoft_turbo_raw.so
 odm/lib64/libarcsoft_ultra_high_dynamic_range.so
 odm/lib64/libarcsoft_videoautozoom.so;FIX_SONAME
-odm/lib64/libc++_shared.so
 odm/lib64/libcalculator.so
 odm/lib64/libcalculator_htp.so
 odm/lib64/libcreatebin.so
@@ -1004,7 +1000,6 @@ odm/lib64/libhybridraw_datas.so
 odm/lib64/libhybridraw_tuningparams.so
 odm/lib64/libhyperlapse.so
 odm/lib64/libimgClarityEvaluate.so
-odm/lib64/libmpbase.so
 odm/lib64/libmsnativefilter.so
 odm/lib64/libmvgcommon.so
 odm/lib64/libnpu.so
@@ -1355,11 +1350,9 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmmcamera_pnc.so
-vendor/lib64/libnanopb.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
 vendor/lib64/libopestriping.so
-vendor/lib64/libos.so
 vendor/lib64/libpnc_cl_program.bin
 vendor/lib64/libqll.so
 vendor/lib64/libqll10.so
@@ -1370,9 +1363,7 @@ vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libsgutils2.so
 vendor/lib64/libspectre.so
 vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
-vendor/lib64/libthreadutils.so
 vendor/lib64/libtriplecam_optical_zoom_control.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libtriplecam_video_optical_zoom.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libubifocus.so
