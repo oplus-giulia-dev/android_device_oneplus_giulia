@@ -12,6 +12,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 TARGET_SCREEN_HEIGHT := 2376
 TARGET_SCREEN_WIDTH := 1080
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0-service \
+    hwservicemanager
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
