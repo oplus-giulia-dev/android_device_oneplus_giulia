@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<displayConfiguration>
+  <densityMapping>
+    <density>
+      <height>1080</height>
+      <width>2376</width>
+      <density>450</density>
+    </density>
+    <density>
+      <height>1264</height>
+      <width>2780</width>
+      <density>520</density>
+    </density>
+  </densityMapping>
+  <highBrightnessMode enabled="true">
+    <transitionPoint>0.85</transitionPoint>
+    <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
+    <minimumLux>4500</minimumLux>
+    <timing>
+      <timeWindowSecs>0</timeWindowSecs>  // Window in which we restrict HBM.
+      <timeMaxSecs>0</timeMaxSecs>         // Maximum time of HBM allowed in that window.
+      <timeMinSecs>0</timeMinSecs>          // Minimum time remaining required to switch
+    </timing>                                //   HBM on for.
+    <thermalStatusLimit>critical</thermalStatusLimit>
+    <allowInLowPowerMode>true</allowInLowPowerMode>
+    <sdrHdrRatioMap>
+      <point>
+        <sdrNits>6.0</sdrNits>
+        <hdrRatio>10.0</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>500</sdrNits>
+        <hdrRatio>2.1</hdrRatio>
+      </point>
+      <point>
+        <sdrNits>800</sdrNits>
+        <hdrRatio>1.2</hdrRatio>
+      </point>
+    </sdrHdrRatioMap>
+  </highBrightnessMode>
+  <screenBrightnessRampFastDecrease>0.06</screenBrightnessRampFastDecrease>
+  <screenBrightnessRampFastIncrease>0.06</screenBrightnessRampFastIncrease>
+  <screenBrightnessRampSlowDecrease>0.04</screenBrightnessRampSlowDecrease>
+  <screenBrightnessRampSlowIncrease>0.04</screenBrightnessRampSlowIncrease>
+  <screenBrightnessRampIncreaseMaxMillis>3000</screenBrightnessRampIncreaseMaxMillis>
+  <screenBrightnessRampDecreaseMaxMillis>3000</screenBrightnessRampDecreaseMaxMillis>
+</displayConfiguration>
