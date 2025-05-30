@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -13,6 +14,9 @@ $(call inherit-product, device/oneplus/giulia/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Add Gapps
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
 PRODUCT_NAME := lineage_giulia
 PRODUCT_DEVICE := giulia
@@ -29,3 +33,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=CPH2691 \
     SystemDevice=OP5D3BL1 \
     SystemName=CPH2691
+
