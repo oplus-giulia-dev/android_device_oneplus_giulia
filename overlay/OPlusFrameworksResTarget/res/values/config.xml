@@ -4,7 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
@@ -16,14 +15,13 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>2</item>
-        <item>6</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>400</item>
-        <item>600</item>
-        <item>1000</item>
+        <item>5000</item> <!--     0 - 50    -->
+        <item>1500</item> <!--    50 - 115   -->
+        <item>750</item>  <!--   115 - 500   -->
+        <item>600</item>  <!--   500 - 1000  -->
+        <item>500</item>  <!--  1000 - 2000  -->
+        <item>500</item>  <!--  2000 - 4000  -->
+        <item>500</item>  <!--     4000+     -->
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -33,14 +31,13 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>800</item>
-        <item>800</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
+        <item>1</item>    <!--     0 - 50    -->
+        <item>50</item>   <!--    50 - 150   -->
+        <item>450</item>  <!--   115 - 500   -->
+        <item>500</item>  <!--   500 - 1000  -->
+        <item>500</item>  <!--  1000 - 2000  -->
+        <item>500</item>  <!--  2000 - 4000  -->
+        <item>500</item>  <!--     4000+     -->
     </integer-array>
 
     <!-- Array of screen brightness threshold values. This is used for determining hysteresis
@@ -55,11 +52,10 @@
          level[n] <= value < level[n+1]  n+1
          level[MAX] <= value             MAX+1 -->
     <integer-array name="config_ambientThresholdLevels">
-        <item>2</item>
-        <item>10</item>
-        <item>30</item>
-        <item>100</item>
-        <item>800</item>
+        <item>50</item>
+        <item>150</item>
+        <item>500</item>
+        <item>1000</item>
         <item>2000</item>
         <item>4000</item>
     </integer-array>
@@ -106,40 +102,40 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
-	<item>2</item>
-	<item>4</item>
-	<item>6</item>
-	<item>8</item>
-	<item>10</item>
-	<item>15</item>
-	<item>20</item>
-	<item>25</item>
-	<item>30</item>
-	<item>40</item>
-	<item>60</item>
-	<item>95</item>
-	<item>100</item>
-	<item>200</item>
-	<item>300</item>
-	<item>400</item>
-	<item>500</item>
-	<item>600</item>
-	<item>700</item>
-	<item>800</item>
-	<item>1000</item>
-	<item>1200</item>
-	<item>1400</item>
-	<item>1600</item>
-	<item>1700</item>
-	<item>1800</item>
-	<item>1900</item>
-	<item>2000</item>
-	<item>4000</item>
-	<item>7000</item>
-	<item>10000</item>
-	<item>15000</item>
-	<item>30000</item>
-	<item>40000</item>
+        <item>6</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1200</item>
+        <item>1400</item>
+        <item>1600</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>4000</item>
+        <item>7000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>40000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -156,43 +152,55 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-    	<item>2.0</item>
-	<item>7.5</item>
-	<item>9.0</item>
-	<item>10.0</item>
-	<item>12.0</item>
-	<item>15.0</item>
-	<item>20.0</item>
-	<item>25.0</item>
-	<item>30.0</item>
-	<item>50.0</item>
-	<item>55.0</item>
-	<item>80.0</item>
-	<item>100.0</item>
-	<item>120.0</item>
-	<item>180.0</item>
-	<item>200.0</item>
-	<item>220.0</item>
-	<item>240.0</item>
-	<item>280.0</item>
-	<item>300.0</item>
-	<item>310.0</item>
-	<item>320.0</item>
-	<item>355.0</item>
-	<item>390.0</item>
-	<item>400.0</item>
-	<item>440.0</item>
-	<item>470.0</item>
-	<item>475.0</item>
-	<item>485.0</item>
-	<item>495.0</item>
-	<item>500.0</item>
-	<item>545.0</item>
-	<item>600.0</item>
-	<item>650.0</item>
-	<item>720.0</item>
-	<item>800.0</item>
+        <item>4.0</item>    <!--      0 - 1     -->
+        <item>8.0</item>    <!--      1 - 6     -->
+        <item>30.0</item>   <!--      6 - 10    -->
+        <item>100.0</item>  <!--     10 - 20    -->
+        <item>130.0</item>  <!--     20 - 30    -->
+        <item>150.0</item>  <!--     30 - 40    -->
+        <item>160.0</item>  <!--     40 - 50    -->
+        <item>170.0</item>  <!--     50 - 60    -->
+        <item>190.0</item>  <!--     60 - 70    -->
+        <item>200.0</item>  <!--     70 - 80    -->
+        <item>230.0</item>  <!--     80 - 90    -->
+        <item>235.0</item>  <!--     90 - 100   -->
+        <item>240.0</item>  <!--    100 - 150   -->
+        <item>245.0</item>  <!--    150 - 200   -->
+        <item>250.0</item>  <!--    200 - 300   -->
+        <item>255.0</item>  <!--    300 - 400   -->
+        <item>260.0</item>  <!--    400 - 500   -->
+        <item>265.0</item>  <!--    500 - 600   -->
+        <item>270.0</item>  <!--    600 - 700   -->
+        <item>275.0</item>  <!--    700 - 800   -->
+        <item>280.0</item>  <!--    800 - 900   -->
+        <item>285.0</item>  <!--    900 - 1000  -->
+        <item>290.0</item>  <!--   1000 - 1200  -->
+        <item>300.0</item>  <!--   1200 - 1400  -->
+        <item>340.0</item>  <!--   1400 - 1600  -->
+        <item>380.0</item>  <!--   1600 - 1700  -->
+        <item>400.0</item>  <!--   1700 - 1800  -->
+        <item>500.0</item>  <!--   1800 - 1900  -->
+        <item>600.0</item>  <!--   1900 - 2000  -->
+        <item>620.0</item>  <!--   2000 - 4000  -->
+        <item>640.0</item>  <!--   4000 - 7000  -->
+        <item>660.0</item>  <!--   7000 - 10000 -->
+        <item>680.0</item>  <!--  10000 - 15000 -->
+        <item>700.0</item>  <!--  15000 - 30000 -->
+        <item>750.0</item>  <!--  30000 - 40000 -->
+        <item>800.0</item>  <!--      40000+    -->
     </array>
+
+    <!-- Fast brightness animation ramp rate in brightness units per second.
+         For user-driven/abrupt transitions.
+         Typical values: 100-500
+    -->
+    <integer name="config_brightness_ramp_rate_fast">400</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second.
+         For auto/ambient-driven changes.
+         Typical values: 10-50
+    -->
+    <integer name="config_brightness_ramp_rate_slow">50</integer>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
          values in the config_screenBrightnessBacklight array.  On OLED displays these  values
@@ -201,18 +209,18 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
 
          This array should be equal in size to config_screenBrightnessBacklight -->
-     <array name="config_screenBrightnessNits">
-          <item>2</item>
-          <item>800</item>
-     </array>
+    <array name="config_screenBrightnessNits">
+        <item>2</item>
+        <item>800</item>
+    </array>
 
-     <!-- An array describing the screen's backlight values corresponding to the brightness
+    <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessNits. -->
-     <array name="config_screenBrightnessBacklight">
-          <item>1</item>
-          <item>255</item>
-     </array>
+    <array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>255</item>
+    </array>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -253,7 +261,7 @@
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
 
-     <!-- The stable device width and height in pixels. If these aren't set to a positive number
+    <!-- The stable device width and height in pixels. If these aren't set to a positive number
           then the device will use the width and height of the default display the first time it's
           booted.  -->
     <integer name="config_stableDeviceDisplayWidth">1264</integer>
@@ -303,4 +311,5 @@
          1: 2 button mode (back, home buttons + swipe up for overview)
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
+    
 </resources>
