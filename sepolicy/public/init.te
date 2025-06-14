@@ -1,0 +1,4 @@
+# OverlayFS
+allow init vendor_configs_file:dir mounton;
+
+allow init vendor_hal_file:dir mounton;

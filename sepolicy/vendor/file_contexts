@@ -1,0 +1,13 @@
+# OverlayFS
+# OnePlus 13R
+/(odm|vendor/odm)/giulia/etc(/.*)?                                  u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/giulia/firmware/fastchg(/.*)?                     u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/giulia/vendor/firmware(/.*)?                      u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/giulia/lib(64)?/camera(/.*)?                      u:object_r:vendor_hal_file:s0
+
+# OnePlus Ace 5
+/(odm|vendor/odm)/giuliacn/etc(/.*)?                                u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/giuliacn/firmware/fastchg(/.*)?                   u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/giuliacn/vendor/firmware(/.*)?                    u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/giuliacn/lib(64)?/camera(/.*)?                    u:object_r:vendor_hal_file:s0
+
