@@ -15,9 +15,6 @@ TARGET_OTA_ASSERT_DEVICE := OP5D3BL1,OP5D2BL1
 # Display
 TARGET_SCREEN_DENSITY := 500
 
-# Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //device/oneplus/giulia:libudfps_extension.giulia
-
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus/giulia.config
 
