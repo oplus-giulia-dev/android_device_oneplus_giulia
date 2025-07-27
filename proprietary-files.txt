@@ -22,8 +22,6 @@ odm/lib64/libtfa98xx.so
 odm/etc/mixer_paths.xml
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
-vendor/etc/card-defs.xml
-vendor/etc/usecaseKvManager.xml
 
 # Audio firmware
 odm/firmware/sipa.bin
