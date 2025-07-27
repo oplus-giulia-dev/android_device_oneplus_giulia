@@ -69,11 +69,6 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
-    ('odm/lib64/camera.device@3.3-impl_odm.so','odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so', 'odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so', 'odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so', 'odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so'): blob_fixup()
-        .replace_needed('camera.device@3.2-impl.so', 'camera.device@3.2-impl_odm.so')
-        .replace_needed('camera.device@3.3-impl.so', 'camera.device@3.3-impl_odm.so'),
-    'odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so': blob_fixup()
-        .add_needed('libui_shim.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()

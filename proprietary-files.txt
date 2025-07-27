@@ -113,7 +113,6 @@ odm/etc/oprec_audrec_params/oprec_record_ID9_HE.txt
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
-odm/bin/hw/virtualcameraprovider
 odm/etc/camera/CaliData/mtStereoParams_golden.bin
 odm/etc/camera/CaliData/mwStereoParams_golden.bin
 odm/etc/camera/aigc/aigc_models/blurDet_sm8650.bin
@@ -812,13 +811,9 @@ odm/etc/camera/wide.bin
 odm/etc/camera/wide_inv_padding_mapxy_33x25.bin
 odm/etc/camera/wide_padding_mapxy_33x25.bin
 odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc
-odm/etc/init/virtualcameraprovider.rc
 odm/etc/vintf/manifest/manifest_oplus_camera_rfi.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_sendextcamcmd.xml
-odm/etc/virtualcamera.json
-odm/lib64/camera.device@3.2-impl.so:odm/lib64/camera.device@3.2-impl_odm.so;FIX_SONAME
-odm/lib64/camera.device@3.3-impl.so:odm/lib64/camera.device@3.3-impl_odm.so;FIX_SONAME
 odm/lib64/camera/components/com.oplus.node.mvgsat.so;DISABLE_DEPS
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.sstabdefer.so
@@ -1015,13 +1010,6 @@ odm/lib64/vendor.oplus.hardware.camera_rfi-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so
-odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl.xml
