@@ -1334,16 +1334,16 @@ vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
-# Camera(OnePlus Ace 5) - from PKG110_15.0.0.821(CN01)
-odm/etc/camera/CameraHWConfiguration.config:odm/giuliacn/etc/camera/CameraHWConfiguration.config|65801ce680f1ca979c519a1f8448f76883d0b9ee
+# Camera(OnePlus Ace 5) - from PKG110_15.0.0.850(CN01)
+odm/etc/camera/CameraHWConfiguration.config:odm/giuliacn/etc/camera/CameraHWConfiguration.config|750108ab665406f1d2e5458eff42f64f9bd73c21
 odm/etc/camera/CameraOemConfiguration.config:odm/giuliacn/etc/camera/CameraOemConfiguration.config|7f012154ddedff2fe729e17d5b61bc4a2eab44de
 odm/etc/camera/config/camera_third_party_feature_config.protobuf:odm/giuliacn/etc/camera/config/camera_third_party_feature_config.protobuf|915cef540e3c73dd3a48cbad0caa3a9456a58125
 odm/etc/camera/config/camera_unit_config:odm/giuliacn/etc/camera/config/camera_unit_config|3887d9e288a4d2b19c9526dd13997eda2cac3e95
-odm/etc/camera/config/camera_unit_feature_config.protobuf:odm/giuliacn/etc/camera/config/camera_unit_feature_config.protobuf|d54d5d01d994672c65289cff9b26c76083a84370
-odm/etc/camera/config/oplus_camera_algo_switch_config:odm/giuliacn/etc/camera/config/oplus_camera_algo_switch_config|388ca3060dd82067ec91d9808ce1903bff67467c
+odm/etc/camera/config/camera_unit_feature_config.protobuf:odm/giuliacn/etc/camera/config/camera_unit_feature_config.protobuf|3ee30313af5092d8f9442d0156f924d31adc18a3
+odm/etc/camera/config/oplus_camera_algo_switch_config:odm/giuliacn/etc/camera/config/oplus_camera_algo_switch_config|883970c663575110bb2320c3dc3d047877961696
 odm/etc/camera/config/oplus_camera_algo_traversal_config.json:odm/giuliacn/etc/camera/config/oplus_camera_algo_traversal_config.json|d7762d31a2d5e8f5a93b1e0c7d370f5283c347d9
 odm/etc/camera/config/oplus_camera_aps_config:odm/giuliacn/etc/camera/config/oplus_camera_aps_config|6d7d88285091ee8cb93b5f5ed2e3162a91aa9dac
-odm/etc/camera/config/oplus_camera_config:odm/giuliacn/etc/camera/config/oplus_camera_config|5c55ae6ba2c45cf1d75709b1356bcd48c8d9f94a
+odm/etc/camera/config/oplus_camera_config:odm/giuliacn/etc/camera/config/oplus_camera_config|11adccbf5c5fd9831f4cf917e9415c8031eff9e5
 odm/etc/camera/config/oplus_camera_preview_decision_config.json:odm/giuliacn/etc/camera/config/oplus_camera_preview_decision_config.json|2da473c34f0e84693d837fee1adef9d12bd5f60c
 odm/etc/camera/config/oplus_preview_decision_params.json:odm/giuliacn/etc/camera/config/oplus_preview_decision_params.json|329d5f1cf88eb87a5e545e816780889285bebc86
 odm/etc/camera/config/ov02b:odm/giuliacn/etc/camera/config/ov02b|5a68314551b6be976e2c52b7da334f92ac059866
@@ -1365,7 +1365,7 @@ odm/lib64/camera/libafCustomParam_Cam1.bin:odm/giuliacn/lib64/camera/libafCustom
 odm/lib64/camera/libafCustomParam_Cam2.bin:odm/giuliacn/lib64/camera/libafCustomParam_Cam2.bin|22cc6f13d22fd13b60ae887651ed383acf87970e
 odm/lib64/camera/libafCustomParam_Cam3.bin:odm/giuliacn/lib64/camera/libafCustomParam_Cam3.bin|15dff789117650516383bfa0ea188abeb3a944fc
 odm/lib64/camera/libpdCustomParam_Cam0.bin:odm/giuliacn/lib64/camera/libpdCustomParam_Cam0.bin|2462683f1b060013753d5b102fe4df73a16b5679
-odm/lib64/camera/revision.txt:odm/giuliacn/lib64/camera/revision.txt|708a4ad5ca0659624444b8dab55a64a9d90c6d23
+odm/lib64/camera/revision.txt:odm/giuliacn/lib64/camera/revision.txt|1eae2ee178f3bd699b343c6a700a481709ad952b
 
 # Camera(OnePlus 13R)
 odm/etc/camera/CameraHWConfiguration.config:odm/giulia/etc/camera/CameraHWConfiguration.config
