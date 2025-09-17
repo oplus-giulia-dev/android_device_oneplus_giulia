@@ -7,9 +7,10 @@
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
-        <item>303</item>
-        <item>301</item>
-        <item>307</item>
+        <item>0</item>
+        <item>256</item>
+        <item>258</item>
+        <item>259</item>
     </integer-array>
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
