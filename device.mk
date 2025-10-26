@@ -31,6 +31,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
+    FrameworksResEuicc_EU \
+    FrameworksResEuicc_NA \
     OPlusFrameworksResTarget \
     OPlusFrameworksResTargetCN \
     OPlusSettingsProviderResTarget \
@@ -52,6 +54,13 @@ PRODUCT_SHIPPING_API_LEVEL := 35
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    OplusEuicc
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # Touch features
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
