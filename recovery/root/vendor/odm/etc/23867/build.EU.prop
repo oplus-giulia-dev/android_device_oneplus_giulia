@@ -1,4 +1,8 @@
+# Device info
 ro.product.odm.model=CPH2645
 ro.product.odm.name=CPH2645EEA
 ro.vendor.oplus.regionmark=EUEX
 ro.vendor.oplus.radio.sar_regionmark=EUEX
+
+# eSIM
+ro.vendor.oplus.radio.esim.feature=2
