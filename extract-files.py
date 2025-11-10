@@ -49,8 +49,16 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'odm/giulia/etc/camera/CameraHWConfiguration.config': blob_fixup()
+        # Disable face detection AE behaviour
+        .regex_replace(r'(enableSWfdForThirdCamUnit += )TRUE', r'\1FALSE')
+        .regex_replace(r'(fdSupport += )TRUE;', r'\1FALSE;')
+        # Expose AUX cameras
         .regex_replace('SystemCamera =  0;  0;  0;  1;  0; 1;', 'SystemCamera =  0;  0;  0;  0;  0; 0;'),
     'odm/giuliacn/etc/camera/CameraHWConfiguration.config': blob_fixup()
+        # Disable face detection AE behaviour
+        .regex_replace(r'(enableSWfdForThirdCamUnit += )TRUE', r'\1FALSE')
+        .regex_replace(r'(fdSupport += )TRUE;', r'\1FALSE;')
+        # Expose AUX cameras
         .regex_replace('SystemCamera =  0;  0;  0;  1;  0; 1;', 'SystemCamera =  0;  0;  0;  0;  0; 0;'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
