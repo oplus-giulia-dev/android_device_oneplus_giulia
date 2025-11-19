@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.default_name=OnePlus Ace 5
+
 # Device info
 ro.product.odm.device=OP5D2BL1
 ro.product.odm.model=PKG110
@@ -6,3 +9,6 @@ ro.vendor.oplus.regionmark=CN
 
 # NFC
 persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_23851
+
+# USB
+vendor.usb.product_string=OnePlus Ace 5

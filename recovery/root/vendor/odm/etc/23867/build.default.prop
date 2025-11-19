@@ -1,4 +1,10 @@
 import /odm/etc/${ro.boot.prjname}/build.${ro.boot.hardware.revision}.prop
 
+# Bluetooth
+bluetooth.device.default_name=OnePlus 13R
+
 # NFC
 persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_23867
+
+# USB
+vendor.usb.product_string=OnePlus 13R
