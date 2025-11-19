@@ -3,6 +3,7 @@
 
 # Current blobs with deps disabled:
 # com.oplus.node.mvgsat, com.oplus.node.sstabphoto, com.qti.node.dewarp, com.qti.chi.override, libcamximageformatutils, libchifeature2 depends on multiple versions of the same aidl_interface: android.hardware.graphics.allocator-V1-ndk, android.hardware.graphics.allocator-V2-ndk-source
+# vendor.qti.hardware.display.composer-service depends on multiple versions of the same aidl_interface: android.hardware.graphics.composer3-V2-ndk-source, android.hardware.graphics.composer3-V3-ndk-source
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -870,7 +871,7 @@ odm/lib64/libODNN.so
 odm/lib64/libOGLManager.so
 odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
 odm/lib64/libOPAlgoCamAiBeautyEyeRetouchCn.so
-odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so;DISABLE_CHECKELF
+odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
 odm/lib64/libOPAlgoCamAiUnifySkin.so
 odm/lib64/libOPAlgoCamFaceBeautyCap.so
 odm/lib64/libOPAlgoCamFaceRestore.so
@@ -885,6 +886,7 @@ odm/lib64/libPlatformValidatorShared.so
 odm/lib64/libPolarrRender.so
 odm/lib64/libPreviewDecisionOld.so
 odm/lib64/libRedeyeReduce.so
+odm/lib64/libSNPE.so
 odm/lib64/libSnpeHta.so;FIX_SONAME
 odm/lib64/libSnpeHtpPrepare.so
 odm/lib64/libSnpeHtpV75Stub.so
@@ -910,9 +912,13 @@ odm/lib64/libancbase_segbase.so
 odm/lib64/libancbase_segment.so
 odm/lib64/libancbase_segmulti.so
 odm/lib64/libapsexif.so
+odm/lib64/libapsjpeg.so
 odm/lib64/libapspng.so
+odm/lib64/libapsultrahdr.so
 odm/lib64/libapsyuv.so
 odm/lib64/libarc.fusion.so
+odm/lib64/libarc.ion.so
+odm/lib64/libarcsoft_ai_moon.so
 odm/lib64/libarcsoft_distortion_correction.so
 odm/lib64/libarcsoft_dual_sat.so
 odm/lib64/libarcsoft_dual_zoomtranslator.so
@@ -933,6 +939,7 @@ odm/lib64/libarcsoft_low_light_hdr.so
 odm/lib64/libarcsoft_mcxmflpolicy.so
 odm/lib64/libarcsoft_merge_hdr_denoise_api.so
 odm/lib64/libarcsoft_preview_antibanding.so
+odm/lib64/libarcsoft_qnnhtp.so
 odm/lib64/libarcsoft_scbokeh_video.so
 odm/lib64/libarcsoft_smart_denoise.so
 odm/lib64/libarcsoft_smart_denoise_v4.so
@@ -946,6 +953,7 @@ odm/lib64/libarcsoft_turbo_hdr_raw_front.so
 odm/lib64/libarcsoft_turbo_raw.so
 odm/lib64/libarcsoft_ultra_high_dynamic_range.so
 odm/lib64/libarcsoft_videoautozoom.so;FIX_SONAME
+odm/lib64/libc++_shared.so
 odm/lib64/libcalculator.so
 odm/lib64/libcalculator_htp.so
 odm/lib64/libcreatebin.so
@@ -963,6 +971,7 @@ odm/lib64/libhybridraw_datas.so
 odm/lib64/libhybridraw_tuningparams.so
 odm/lib64/libhyperlapse.so
 odm/lib64/libimgClarityEvaluate.so
+odm/lib64/libmpbase.so
 odm/lib64/libmsnativefilter.so
 odm/lib64/libmvgcommon.so
 odm/lib64/libnpu.so
@@ -973,6 +982,8 @@ odm/lib64/liboplus_spat_record.so
 odm/lib64/liboplusblur_capture_api.so
 odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
+odm/lib64/libosie_process.so
+odm/lib64/libosie_stub.so
 odm/lib64/libpdCustomParamParser.so
 odm/lib64/libpngwrapper.so
 odm/lib64/libportrait_repair_qnn.so
@@ -1023,6 +1034,7 @@ vendor/lib64/camera/components/com.qti.hvx.binning.so
 vendor/lib64/camera/components/com.qti.hwcfg.bps.so
 vendor/lib64/camera/components/com.qti.hwcfg.ife.so
 vendor/lib64/camera/components/com.qti.hwcfg.ipe.so
+vendor/lib64/camera/components/com.qti.hwcfg.tfe.so
 vendor/lib64/camera/components/com.qti.node.afbfusion.so
 vendor/lib64/camera/components/com.qti.node.aon.so
 vendor/lib64/camera/components/com.qti.node.customhwnode.so
@@ -1253,7 +1265,7 @@ vendor/lib64/libRGBC.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libarcsoft_triple_sat.so;MODULE_SUFFIX=_vendor;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_triple_sat.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libarcsoft_triple_zoomtranslator.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
@@ -1286,7 +1298,6 @@ vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_stub.so
 vendor/lib64/libhme.so
 vendor/lib64/libhwconfigurationutil.so;MODULE_SUFFIX=_vendor
-vendor/lib64/libhwcsensor.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so
@@ -1400,6 +1411,34 @@ odm/lib64/camera/libafCustomParam_Cam3.bin:odm/giulia/lib64/camera/libafCustomPa
 odm/lib64/camera/libpdCustomParam_Cam0.bin:odm/giulia/lib64/camera/libpdCustomParam_Cam0.bin
 odm/lib64/camera/revision.txt:odm/giulia/lib64/camera/revision.txt
 
+# Camera firmware
+vendor/firmware/CAMERA_ICP.b00
+vendor/firmware/CAMERA_ICP.b01
+vendor/firmware/CAMERA_ICP.b02
+vendor/firmware/CAMERA_ICP.b03
+vendor/firmware/CAMERA_ICP.b04
+vendor/firmware/CAMERA_ICP.b05
+vendor/firmware/CAMERA_ICP.b06
+vendor/firmware/CAMERA_ICP.b07
+vendor/firmware/CAMERA_ICP.b08
+vendor/firmware/CAMERA_ICP.b09
+vendor/firmware/CAMERA_ICP.b10
+vendor/firmware/CAMERA_ICP.b11
+vendor/firmware/CAMERA_ICP.b12
+vendor/firmware/CAMERA_ICP.b13
+vendor/firmware/CAMERA_ICP.b14
+vendor/firmware/CAMERA_ICP.b15
+vendor/firmware/CAMERA_ICP.b16
+vendor/firmware/CAMERA_ICP.b17
+vendor/firmware/CAMERA_ICP.b18
+vendor/firmware/CAMERA_ICP.b19
+vendor/firmware/CAMERA_ICP.b20
+vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/CAMERA_ICP.mbn
+vendor/firmware/CAMERA_ICP.mdt
+vendor/firmware/CAMERA_ICP_170.elf
+vendor/firmware/tof8801_firmware.bin
+
 # Charger firmware(OnePlus Ace 5) - from PKG110_15.0.0.821(CN01)
 odm/firmware/fastchg/23851/charging_hyper_mode_config.txt:odm/giuliacn/firmware/fastchg/23851/charging_hyper_mode_config.txt|31c6f77d20203e79823abb03c6c4aae9a2325fe2
 odm/firmware/fastchg/23851/silicon_x24_charging_hyper_mode_config.txt:odm/giuliacn/firmware/fastchg/23851/silicon_x24_charging_hyper_mode_config.txt|0934a23f85d51d4ae0db412d0c8a87a931fd5f60
@@ -1414,8 +1453,197 @@ odm/firmware/fastchg/charging_thermal_config_default.txt:odm/giulia/firmware/fas
 odm/firmware/fastchg/smart_chg_config_table.txt:odm/giulia/firmware/fastchg/smart_chg_config_table.txt
 
 # Display calibration data
-odm/etc/display/cwb_weightspos.json
+my_product/vendor/etc/display_apollo_list_AA577_P_3_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA577_P_3_A0020_dsc_cmd_mode_panel.xml
 odm/etc/display/qdcm_calib_data_AA577_P_3_A0020_dsc_cmd_mode_panel.json
+vendor/etc/ltm_config_AA577_P_3_A0020_dsc_cmd_mode_panel.xml
+
+# Display (Features)
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_1_2nit.odf
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_1_100nit.odf
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_1_max.odf
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_2_2nit.odf
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_2_100nit.odf
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_2_max.odf
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Cinema_2nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Cinema_100nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Cinema_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_EP3_2nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_EP3_100nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_EP3_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_EsRGB_2nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_EsRGB_100nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_EsRGB_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_HS
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_LsRGB_2nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_LsRGB_100nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_LsRGB_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Nature_2nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Nature_100nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Nature_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt
+odm/etc/PanelChaplin/AA577_P_3_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt
+odm/etc/PanelChaplin/AdjustValue
+odm/etc/PanelChaplin/panelchaplin
+odm/etc/init/hw/init.oplus.display.rc
+odm/lib64/libPanelChaplin.so
+odm/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so
+vendor/bin/feature_enabler_client
+vendor/etc/init/feature_enabler_client.rc
+vendor/lib64/libPanelChaplin.so;MODULE_SUFFIX=_vendor
+
+# Display (HDR)
+vendor/lib64/libhdr_tm.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
+vendor/lib64/libhdrvivid.so
+
+# Display (HWC)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_DEPS;REQUIRED=vendor.qti.hardware.display.composer-service.rc,vendor.qti.hardware.display.composer-service.xml
+vendor/bin/qdcmss
+vendor/etc/init/qdcmss.rc
+vendor/etc/snapdragon_color_libs_config.xml
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libdpp_manager.so
+vendor/lib64/libdpps.so
+vendor/lib64/libgame_enhance.so
+vendor/lib64/libhistogram.so
+vendor/lib64/libhwcsensor.so
+vendor/lib64/libmemutils.so
+vendor/lib64/libqdcm-algo.so
+vendor/lib64/libqdcm-json-mode-parser.so
+vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmdal.so
+vendor/lib64/libsdmutils.so
+vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libsnapdragoncolor-qdcm.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+
+# Display (Pixelworks)
+odm/lib64/libpwirisfeature.so
+odm/lib64/libpwirishalwrapper.so
+odm/lib64/vendor.pixelworks.hardware.display@1.0.so
+odm/lib64/vendor.pixelworks.hardware.display@1.1.so
+odm/lib64/vendor.pixelworks.hardware.display@1.2.so
+odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
+odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
+vendor/lib64/libpwirisfeature.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libpwirishal.so
+vendor/lib64/libpwirishalwrapper.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.display-V2-ndk.so
+vendor/lib64/vendor.pixelworks.hardware.display@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.display@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.display@1.2.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
+vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so;MODULE_SUFFIX=_vendor
+
+# Display (SDM)
+vendor/bin/init.qti.graphics.sh
+vendor/etc/display/DPU1010.xml
+vendor/etc/display/DPU1020.xml
+vendor/etc/display/DPU10__.xml
+vendor/etc/display/DPU870.xml
+vendor/etc/display/DPU9__.xml
+vendor/etc/display/advanced_sf_offsets.xml
+vendor/etc/display/perf_hint_threshold.xml
+vendor/etc/display/thermallevel_to_fps.xml
+vendor/etc/init/init.qti.graphics.rc
+vendor/etc/clstc_config_library.xml
+vendor/lib64/libbacklight-calib.so
+vendor/lib64/libclstc_algorithm_adapter.so
+vendor/lib64/libclstc_gcp_adapter.so
+vendor/lib64/libclstc_tm.so
+vendor/lib64/libdigital-dimming.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libhdr_backlight_adapter.so
+vendor/lib64/libintervmipc.so
+vendor/lib64/libqrtrclient.so
+vendor/lib64/libqseed3.so
+vendor/lib64/librcmask.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtestutils.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libvmfilexfer.so
+
+# Display postprocessing
+vendor/bin/hw/vendor.qti.hardware.display.color-service
+vendor/bin/ppd
+vendor/etc/init/vendor.qti.hardware.display.color-service.rc
+vendor/lib64/libdisp-aba.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.color@1.3.so
+vendor/lib64/vendor.display.color@1.4.so
+vendor/lib64/vendor.display.color@1.5.so
+vendor/lib64/vendor.display.postproc@1.0.so
+
+# Display firmware
+vendor/firmware/dpAP_full.mbn
+vendor/firmware/dpAP_mini.mbn
+vendor/firmware/dpAP_modemssr.mbn
+vendor/firmware/dpMSA.mbn
+
+# Dolby Vision
+odm/etc/dolby/display/dolby_vision.cfg
+odm/etc/dolby/dolby_vision.cfg
+odm/etc/media_codecs_dolby_vision.xml
+odm/lib64/libdolbyclstc.so
+vendor/etc/dolby_vision.cfg
+
+# EVA firmware
+vendor/firmware/evass-lt.b00
+vendor/firmware/evass-lt.b01
+vendor/firmware/evass-lt.b02
+vendor/firmware/evass-lt.b03
+vendor/firmware/evass-lt.b04
+vendor/firmware/evass-lt.b05
+vendor/firmware/evass-lt.b06
+vendor/firmware/evass-lt.b07
+vendor/firmware/evass-lt.b08
+vendor/firmware/evass-lt.b09
+vendor/firmware/evass-lt.b10
+vendor/firmware/evass-lt.b11
+vendor/firmware/evass-lt.b12
+vendor/firmware/evass-lt.b13
+vendor/firmware/evass-lt.b14
+vendor/firmware/evass-lt.b15
+vendor/firmware/evass-lt.b16
+vendor/firmware/evass-lt.b17
+vendor/firmware/evass-lt.b18
+vendor/firmware/evass-lt.b19
+vendor/firmware/evass-lt.mbn
+vendor/firmware/evass-lt.mdt
+vendor/firmware/evass.b00
+vendor/firmware/evass.b01
+vendor/firmware/evass.b02
+vendor/firmware/evass.b03
+vendor/firmware/evass.b04
+vendor/firmware/evass.b05
+vendor/firmware/evass.b06
+vendor/firmware/evass.b07
+vendor/firmware/evass.b08
+vendor/firmware/evass.b09
+vendor/firmware/evass.b10
+vendor/firmware/evass.b11
+vendor/firmware/evass.b12
+vendor/firmware/evass.b13
+vendor/firmware/evass.b14
+vendor/firmware/evass.b15
+vendor/firmware/evass.b16
+vendor/firmware/evass.b17
+vendor/firmware/evass.b18
+vendor/firmware/evass.b19
+vendor/firmware/evass.mbn
+vendor/firmware/evass.mdt
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00
@@ -1439,9 +1667,58 @@ odm/vendor/firmware/uff_spi.b07
 odm/vendor/firmware/uff_spi.b08
 odm/vendor/firmware/uff_spi.mdt
 
+# Fingerprint Pay firmware
+odm/vendor/firmware/alipay.b00
+odm/vendor/firmware/alipay.b01
+odm/vendor/firmware/alipay.b02
+odm/vendor/firmware/alipay.b03
+odm/vendor/firmware/alipay.b04
+odm/vendor/firmware/alipay.b05
+odm/vendor/firmware/alipay.b06
+odm/vendor/firmware/alipay.b07
+odm/vendor/firmware/alipay.b08
+odm/vendor/firmware/alipay.mdt
+
+# Graphics (Adreno firmware)
+vendor/firmware/gen70900_aqe.fw
+vendor/firmware/gen70900_sqe.fw
+vendor/firmware/gen70900_zap.mbn
+vendor/firmware/gen71100_gmu.bin
+vendor/firmware/gen71100_sqe.fw
+vendor/firmware/gen71100_zap.mbn
+vendor/firmware/gmu_gen70900.bin
+vendor/firmware/qps615_fw.bin
+vendor/gpu/kbc/sequence_manifest.bin
+vendor/gpu/kbc/unified_kbcs_64.bin
+vendor/gpu/kbc/unified_ksqs.bin
+
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_23867:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_23867:vendor/etc/libnfc-nci.conf
+
+# OPLUS Display
+odm/bin/hw/vendor.oplus.hardware.displaypanelfeature-service
+odm/bin/cwb_utils_aidl
+odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc
+odm/etc/vintf/manifest/manifest_displaycolorfeature_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_cwb_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_displaypanelfeature_aidl.xml
+odm/etc/displaycolorfeaturecfg.xml
+odm/lib64/libdisplayaidlapis.so
+odm/lib64/libdisplaycolorfeature.so
+odm/lib64/libdisplayfossfeature_nature.so
+odm/lib64/libdpaservice.so
+odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
+vendor/etc/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
+vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
+vendor/lib64/libcwb_client_vendor.so
+vendor/lib64/libcwb_qcom_aidl.so
+vendor/lib64/vendor.oplus.hardware.cwb-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
+vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
+
+# Sensors
+vendor/lib64/sensors.qsh.so
 
 # Sensors config
 odm/etc/sensor/config/giulia_qrd_ois_system.json
@@ -1497,6 +1774,16 @@ odm/firmware/ufs/SKhynix-HN8T374ZJKX141.bin
 odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
 odm/firmware/ufs/ufs_version_config.xml
 
+# VPU firmware
+vendor/firmware/vpu20_2v.mbn
+vendor/firmware/vpu20_2v_unsigned.mbn
+vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v_unsigned.mbn
+vendor/firmware/vpu30_2v.mbn
+vendor/firmware/vpu30_2v_unsigned.mbn
+vendor/firmware/vpu33_4v.mbn
+vendor/firmware/vpu33_4v_unsigned.mbn
+
 # WiFi
 odm/etc/wifi/kiwi/bdwlan.b0a
 odm/etc/wifi/kiwi/bdwlan.b0c
@@ -1504,3 +1791,4 @@ odm/etc/wifi/kiwi/bdwlan.b0e
 odm/etc/wifi/kiwi/bdwlan.b0i
 odm/etc/wifi/kiwi/bdwlan.elf
 odm/etc/wifi/kiwi/regdb.bin
+odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
