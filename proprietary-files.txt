@@ -1766,6 +1766,7 @@ odm/lib64/libhta_hexagon_runtime_snpe.so
 odm/etc/nfc/libnfc-mtp-SN220.conf_23851:odm/etc/libnfc-mtp-SN220.conf_23851
 odm/etc/nfc/libnfc-mtp-SN220.conf_23867:odm/etc/libnfc-mtp-SN220.conf_23867
 odm/etc/nfc/libnfc-nci.conf_23867:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # OPLUS Display
 odm/bin/hw/vendor.oplus.hardware.displaypanelfeature-service
