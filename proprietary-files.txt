@@ -14,7 +14,32 @@ odm/etc/acdbdata/up_ve_enpuv4_ha.eai
 odm/etc/acdbdata/up_ve_enpuv4_hh.eai
 
 # ADSP modules
+odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so;MODULE_SUFFIX=.aiboost
+odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so;MODULE_SUFFIX=.aiboost
+odm/lib/rfsa/adsp/capi_v3_oprec.so
+odm/lib/rfsa/adsp/libCalculator_skel.so
+odm/lib/rfsa/adsp/libQnnHtpV75.so
+odm/lib/rfsa/adsp/libQnnHtpV75Skel.so
+odm/lib/rfsa/adsp/libQnnSaver.so
+odm/lib/rfsa/adsp/libSnpeHtpV75Skel.so
+odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
+odm/lib/rfsa/adsp/libcalculator_skel.so
+odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
+odm/lib/rfsa/adsp/libktveffect.so
 odm/lib/rfsa/adsp/libsixth_rx_v3.so
+odm/lib/rfsa/adsp/nlc_bgth_v1_5.so
+
+# ANT+ firmware
+odm/vendor/firmware/antdtx.b00
+odm/vendor/firmware/antdtx.b01
+odm/vendor/firmware/antdtx.b02
+odm/vendor/firmware/antdtx.b03
+odm/vendor/firmware/antdtx.b04
+odm/vendor/firmware/antdtx.b05
+odm/vendor/firmware/antdtx.b06
+odm/vendor/firmware/antdtx.b07
+odm/vendor/firmware/antdtx.b08
+odm/vendor/firmware/antdtx.mdt
 
 # Audio
 odm/lib64/libtfa98xx.so
@@ -1705,6 +1730,37 @@ vendor/firmware/qps615_fw.bin
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
+
+# Neural networks
+odm/lib64/aiboost/libQnnHtp.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiboost/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiboost/libQnnHtpV75Stub.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiboost/libQnnSystem.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiframe/cdsp/signed/libQnnHtpV75Skel.so;MODULE_SUFFIX=.signed.aiframe
+odm/lib64/aiframe/cdsp/unsigned/libQnnHtpV75Skel.so;MODULE_SUFFIX=.unsigned.aiframe
+odm/lib64/aiframe/libQnnHtp.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libQnnHtpV75Stub.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;FIX_SONAME
+odm/lib64/aiframe/libqcom_llm.so
+odm/lib64/aiframe/libtransformer_lite.so
+odm/lib64/libQnnCpu.so
+odm/lib64/libQnnGpu.so
+odm/lib64/libQnnHtp.so
+odm/lib64/libQnnHtpPrepare.so
+odm/lib64/libQnnHtpV75CalculatorStub.so
+odm/lib64/libQnnHtpV75Stub.so
+odm/lib64/libQnnSaver.so
+odm/lib64/libQnnSystem.so
+odm/lib64/libaiboost.so
+odm/lib64/libaiboost_llm.so
+odm/lib64/libaiboost_qnn_external_delegate_te.so;FIX_SONAME
+odm/lib64/libaiboost_qnn_sr.so
+odm/lib64/libaiboost_sr.so
+odm/lib64/libaiboost_te.so;FIX_SONAME
+odm/lib64/libaiboost_ubwc.so
+odm/lib64/libhta_hexagon_runtime_snpe.so
 
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_23851:odm/etc/libnfc-mtp-SN220.conf_23851
