@@ -18,14 +18,14 @@ PRODUCT_NAME := lineage_giulia
 PRODUCT_DEVICE := giulia
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := CPH2691
+PRODUCT_MODEL := CPH2645
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="CPH2691IN-user 15 UKQ1.231108.001 V.R4T3.220ef38-2f6786-311918 release-keys" \
-    BuildFingerprint=OnePlus/CPH2691IN/OP5D3BL1:15/UKQ1.231108.001/V.R4T3.220ef38-2f6786-311918:user/release-keys \
+    BuildDesc="CPH2645-user 16 UKQ1.231108.001 V.R4T3.2ced612-c3b1f5-c58d28 release-keys" \
+    BuildFingerprint=OnePlus/CPH2645/OP5D3BL1:16/UKQ1.231108.001/V.R4T3.2ced612-c3b1f5-c58d28:user/release-keys \
     DeviceName=OP5D3BL1 \
-    DeviceProduct=CPH2691 \
+    DeviceProduct=CPH2645 \
     SystemDevice=OP5D3BL1 \
-    SystemName=CPH2691
+    SystemName=CPH2645
