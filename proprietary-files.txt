@@ -42,6 +42,7 @@ odm/vendor/firmware/antdtx.b08
 odm/vendor/firmware/antdtx.mdt
 
 # Audio
+odm/etc/init/init.audio.rc
 odm/lib64/libtfa98xx.so
 
 # Audio configs
