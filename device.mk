@@ -14,15 +14,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 3216
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2376
+TARGET_SCREEN_WIDTH := 1080
 
 # Display
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946450791512195.xml
-
-# LiveDisplay
-$(call soong_config_set,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946652107814787.xml
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -37,17 +34,12 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.oplus
-
 # Regional properties
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22825/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/22825/build.default.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22877/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/22877/build.EU.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22877/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/22877/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22877/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/22877/build.NA.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/22877/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/22877/build.default.prop
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/build.ROW.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/build.IN.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/build.NA.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/build.default.prop
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -80,4 +72,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/oneplus/sm8650-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/waffle/waffle-vendor.mk)
+$(call inherit-product, vendor/oneplus/giulia/giulia-vendor.mk)

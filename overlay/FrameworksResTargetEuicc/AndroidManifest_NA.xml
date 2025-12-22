@@ -11,5 +11,5 @@
         android:priority="250"
         android:targetPackage="android"
         android:requiredSystemPropertyName="ro.boot.prjname,ro.boot.hardware.revision"
-        android:requiredSystemPropertyValue="22877,NA" />
+        android:requiredSystemPropertyValue="23867,NA" />
 </manifest>
