@@ -1,4 +1,1 @@
 import /odm/etc/build.${ro.boot.hardware.revision}.prop
-
-# NFC
-persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_23867

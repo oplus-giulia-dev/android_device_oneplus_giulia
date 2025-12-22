@@ -1,6 +1,3 @@
-# Display
-persist.vendor.display.pxlw.iris_feature=0x417f0780
-
 # Regional properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 import /odm/etc/build.default.prop

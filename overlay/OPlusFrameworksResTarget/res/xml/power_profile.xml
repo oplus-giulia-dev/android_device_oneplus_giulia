@@ -35,14 +35,14 @@
 
        Each display suffix number should match it's ordinal in its display device config.
   -->
-  <item name="ambient.on.display0">53.35</item>  <!-- ~100mA -->
+  <item name="ambient.on.display0">22.02</item>  <!-- ~22.02mA -->
   <!-- Average battery current draw of display0 while on without backlight.
        There must be one of these for each display, labeled:
        screen.on.display0, screen.on.display1, etc...
 
        Each display suffix number should match it's ordinal in its display device config.
   -->
-  <item name="screen.on.display0">93.32</item>  <!-- ~100mA -->
+  <item name="screen.on.display0">111.58</item>  <!-- ~111.58mA -->
   <!-- Average battery current draw of the backlight at full brightness.
        The full current draw of display N at full brightness should be the sum of screen.on.displayN
        and screen.full.displayN
@@ -52,7 +52,7 @@
 
        Each display suffix number should match it's ordinal in its display device config.
   -->
-  <item name="screen.full.display0">202.46</item>  <!-- ~100mA -->
+  <item name="screen.full.display0">379.52</item>  <!-- ~379.52mA -->
 
   <item name="bluetooth.active">46</item> <!-- Bluetooth data transfer, ~10mA -->
   <item name="bluetooth.on">1.7</item>  <!-- Bluetooth on & connectable, but not connected, ~0.1mA -->
@@ -60,7 +60,7 @@
   <item name="wifi.active">223</item>  <!-- WIFI data transfer, ~200mA -->
   <item name="wifi.scan">120</item>  <!-- WIFI network scanning, ~100mA -->
   <item name="audio">54.2</item> <!-- ~10mA -->
-  <item name="video">0</item> <!-- ~50mA -->
+  <item name="video">60</item> <!-- ~60mA -->
   <item name="camera.flashlight">180</item> <!-- Avg. power for camera flash, ~160mA -->
   <item name="camera.avg">596</item> <!-- Avg. power use of camera in standard usecases, ~550mA -->
   <item name="gps.on">75</item> <!-- ~50mA -->
@@ -379,7 +379,7 @@
   </array>
 
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
-  <item name="battery.capacity">5400</item>
+  <item name="battery.capacity">6000</item>
 
   <!-- Wifi related values. -->
   <!-- Idle Receive current for wifi radio in mA. 0 by default-->
