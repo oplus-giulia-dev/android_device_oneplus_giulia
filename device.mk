@@ -41,6 +41,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/build.NA.prop \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/build.default.prop
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 35
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
