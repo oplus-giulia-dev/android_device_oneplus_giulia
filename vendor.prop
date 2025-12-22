@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=OnePlus 12
+bluetooth.device.default_name=OnePlus 13R
 
 # Graphics
 ro.surface_flinger.set_display_power_timer_ms=1000
@@ -7,4 +7,4 @@ ro.surface_flinger.set_idle_timer_ms=80
 ro.surface_flinger.set_touch_timer_ms=200
 
 # USB
-vendor.usb.product_string=OnePlus 12
+vendor.usb.product_string=OnePlus 13R

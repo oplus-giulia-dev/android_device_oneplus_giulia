@@ -10,6 +10,6 @@
         android:isStatic="true"
         android:priority="250"
         android:targetPackage="android"
-        android:requiredSystemPropertyName="ro.boot.prjname,ro.boot.hardware.revision"
-        android:requiredSystemPropertyValue="22877,EU" />
+        android:requiredSystemPropertyName="ro.boot.hardware.revision"
+        android:requiredSystemPropertyValue="EU" />
 </manifest>

@@ -1,8 +1,0 @@
-# Device info
-ro.product.odm.device=OP5929L1
-ro.product.odm.model=PJD110
-ro.product.odm.name=PJD110
-ro.vendor.oplus.regionmark=CN
-
-# NFC
-persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_22825
