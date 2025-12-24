@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13R (CPH2645_16.0.0.205(EX01)).
+## are from OnePlus Ace 5 (PKG110_16.0.0.205(CN01)).
 
 # Current blobs with deps disabled:
 # com.oplus.node.mvgsat, com.oplus.node.sstabphoto, com.qti.node.dewarp, com.qti.chi.override, libcamximageformatutils, libchifeature2 depends on multiple versions of the same aidl_interface: android.hardware.graphics.allocator-V1-ndk, android.hardware.graphics.allocator-V2-ndk-source
@@ -16,6 +16,7 @@ odm/etc/acdbdata/up_ve_enpuv4_hh.eai
 # ADSP modules
 odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so;MODULE_SUFFIX=.aiboost
 odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so;MODULE_SUFFIX=.aiboost
+odm/lib/rfsa/adsp/oplusmss/unsigned/libQnnHtpV75Skel.so;MODULE_SUFFIX=.unsigned.oplusmss
 odm/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
 odm/lib/rfsa/adsp/libQnnHtpV75.so
@@ -98,8 +99,6 @@ odm/etc/oprec_audrec_params/oprec_record_ID9_HE.txt
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
-odm/etc/camera/CaliData/mtStereoParams_golden.bin
-odm/etc/camera/CaliData/mwStereoParams_golden.bin
 odm/etc/camera/aigc/aigc_models/blurDet_sm8650.bin
 odm/etc/camera/aigc/aigc_models/faceSeg_sm8650.bin
 odm/etc/camera/aigc/aigc_models/gfpgan1024_sm8650.bin
@@ -146,6 +145,7 @@ odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
 odm/etc/camera/cfr_bin/CFR_imx355.bin
 odm/etc/camera/cfr_bin/CFR_imx906.bin
 odm/etc/camera/cfr_bin/CFR_s5kjn5_giulia.bin
+odm/etc/camera/config/camera_third_party_feature_config.protobuf
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/camera_unit_feature_config.protobuf
 odm/etc/camera/config/imx355
@@ -157,40 +157,26 @@ odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/oplus_camera_preview_decision_config.json
 odm/etc/camera/config/oplus_preview_decision_params.json
+odm/etc/camera/config/ov02b
 odm/etc/camera/config/pickref_params.xml
 odm/etc/camera/config/quick_visibility_white_list
-odm/etc/camera/config/s5kjn5_giulia
+odm/etc/camera/config/sr_params.xml
 odm/etc/camera/config/video_beauty_default_config
-odm/etc/camera/dng/ColorMatrix1_imx581.txt
 odm/etc/camera/dng/ColorMatrix1_imx581_2.txt
 odm/etc/camera/dng/ColorMatrix1_imx709_3.txt
 odm/etc/camera/dng/ColorMatrix1_imx890_0.txt
-odm/etc/camera/dng/ColorMatrix1_lyt808.txt
-odm/etc/camera/dng/ColorMatrix1_ov64b40_tele.txt
-odm/etc/camera/dng/ColorMatrix2_imx581.txt
 odm/etc/camera/dng/ColorMatrix2_imx581_2.txt
 odm/etc/camera/dng/ColorMatrix2_imx709_3.txt
 odm/etc/camera/dng/ColorMatrix2_imx890_0.txt
-odm/etc/camera/dng/ColorMatrix2_lyt808.txt
-odm/etc/camera/dng/ColorMatrix2_ov64b40_tele.txt
-odm/etc/camera/dng/D28HUESATMap_imx581.txt
 odm/etc/camera/dng/D28HUESATMap_imx581_2.txt
 odm/etc/camera/dng/D28HUESATMap_imx709_3.txt
 odm/etc/camera/dng/D28HUESATMap_imx890_0.txt
-odm/etc/camera/dng/D28HUESATMap_lyt808.txt
-odm/etc/camera/dng/D28HUESATMap_ov64b40_tele.txt
-odm/etc/camera/dng/D65HUESATMap_imx581.txt
 odm/etc/camera/dng/D65HUESATMap_imx581_2.txt
 odm/etc/camera/dng/D65HUESATMap_imx709_3.txt
 odm/etc/camera/dng/D65HUESATMap_imx890_0.txt
-odm/etc/camera/dng/D65HUESATMap_lyt808.txt
-odm/etc/camera/dng/D65HUESATMap_ov64b40_tele.txt
-odm/etc/camera/dng/ToneCurve_imx581.txt
 odm/etc/camera/dng/ToneCurve_imx581_2.txt
 odm/etc/camera/dng/ToneCurve_imx709_3.txt
 odm/etc/camera/dng/ToneCurve_imx890_0.txt
-odm/etc/camera/dng/ToneCurve_lyt808.txt
-odm/etc/camera/dng/ToneCurve_ov64b40_tele.txt
 odm/etc/camera/facerestore/fr_models/BDET.bin
 odm/etc/camera/facerestore/fr_models/DB.bin
 odm/etc/camera/facerestore/fr_models/FS.bin
@@ -801,7 +787,6 @@ odm/etc/camera/mtStereoParams.bin
 odm/etc/camera/mvg_sat_config.json
 odm/etc/camera/mwStereoParams.bin
 odm/etc/camera/neon_yuv_LUT_64.bin
-odm/etc/camera/oplus_camera_algo_traversal_config.json
 odm/etc/camera/oplus_eis_camera.vcfg
 odm/etc/camera/qnn_binary_9052758122668408981.bin
 odm/etc/camera/salient2_seg.bin
@@ -810,8 +795,7 @@ odm/etc/camera/selfbokehmodel.bin
 odm/etc/camera/settings_fdc.txt
 odm/etc/camera/settings_fdc_lite.txt
 odm/etc/camera/spectrum_test_data_golden
-odm/etc/camera/tele_inv_mapxy_33x25.bin
-odm/etc/camera/tele_mapxy_33x25.bin
+odm/etc/camera/stereoParams.bin
 odm/etc/camera/text_enhance_yuv_v1.tflite
 odm/etc/camera/v10_vamm_sig_norm_0408_8143_SIM.bin
 odm/etc/camera/wide.bin
@@ -828,24 +812,23 @@ odm/lib64/camera/components/com.oplus.node.sstabgme.so
 odm/lib64/camera/components/com.oplus.node.sstabphoto.so;DISABLE_DEPS
 odm/lib64/camera/components/com.oplus.node.sstabrealt.so
 odm/lib64/camera/awb_parameter_default.bin
-odm/lib64/camera/awb_parameter_qtech_s5kjn5_tele.bin
 odm/lib64/camera/awb_parameter_sunny_imx355.bin
 odm/lib64/camera/awb_parameter_sunny_imx480.bin
 odm/lib64/camera/awb_parameter_sunny_imx906.bin
+odm/lib64/camera/awb_parameter_sunny_ov02b.bin
 odm/lib64/camera/com.qti.sensor.imx355.so
 odm/lib64/camera/com.qti.sensor.imx480.so
 odm/lib64/camera/com.qti.sensor.imx906.so
-odm/lib64/camera/com.qti.sensor.s5kjn5_giulia.so
-odm/lib64/camera/com.qti.sensormodule.qtech_s5kjn5_tele.bin
-odm/lib64/camera/com.qti.sensormodule.qtech_s5kjn5_tele_short.bin
+odm/lib64/camera/com.qti.sensor.ov02b.so
 odm/lib64/camera/com.qti.sensormodule.sunny_imx355.bin
 odm/lib64/camera/com.qti.sensormodule.sunny_imx480.bin
 odm/lib64/camera/com.qti.sensormodule.sunny_imx906.bin
+odm/lib64/camera/com.qti.sensormodule.sunny_ov02b.bin
 odm/lib64/camera/com.qti.tuned.default.bin
-odm/lib64/camera/com.qti.tuned.qtech_s5kjn5_tele.bin
 odm/lib64/camera/com.qti.tuned.sunny_imx355.bin
 odm/lib64/camera/com.qti.tuned.sunny_imx480.bin
 odm/lib64/camera/com.qti.tuned.sunny_imx906.bin
+odm/lib64/camera/com.qti.tuned.sunny_ov02b.bin
 odm/lib64/camera/fdconfigpreview.bin
 odm/lib64/camera/fdconfigpreviewlite.bin
 odm/lib64/camera/fdconfigvideo.bin
@@ -874,6 +857,7 @@ odm/lib64/libAncSegMultiSdk.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libBasicTonePhoto.so
 odm/lib64/libBokehPre.so
+odm/lib64/libCNamaSDK_vendor.so
 odm/lib64/libCOppLceTonemapAPI.so
 odm/lib64/libCS.so
 odm/lib64/libCaptureBokeh.so
@@ -890,6 +874,7 @@ odm/lib64/libFilterWrapper.so
 odm/lib64/libHDRDetection.so
 odm/lib64/libHIS.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
+odm/lib64/libNamaWrapper.so
 odm/lib64/libODNN.so
 odm/lib64/libOGLManager.so
 odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
@@ -991,6 +976,7 @@ odm/lib64/libexif-jpeg-aps.so
 odm/lib64/libextendfile.so
 odm/lib64/libextensionlayer.so
 odm/lib64/libfovctrl.so
+odm/lib64/libfuai_vendor.so
 odm/lib64/libhwconfigurationutil.so
 odm/lib64/libhybridraw_datas.so
 odm/lib64/libhybridraw_tuningparams.so
@@ -1399,9 +1385,11 @@ vendor/firmware/CAMERA_ICP_170.elf
 vendor/firmware/tof8801_firmware.bin
 
 # Charger firmware
-odm/firmware/fastchg/23867/charging_hyper_mode_config.txt
+odm/firmware/fastchg/23851/charging_hyper_mode_config.txt
+odm/firmware/fastchg/23851/silicon_x24_charging_hyper_mode_config.txt
 odm/firmware/fastchg/bms_heating_config.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/fastchg/silicon_x24_bms_heating_config.txt
 odm/firmware/fastchg/silicon_x24_smart_chg_config_table.txt
 odm/firmware/fastchg/smart_chg_config_table.txt
 
@@ -1613,10 +1601,6 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
-# eUICC
-my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
-my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00
 odm/vendor/firmware/uff_jv.b01
@@ -1678,6 +1662,12 @@ odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
 odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;FIX_SONAME
 odm/lib64/aiframe/libqcom_llm.so
 odm/lib64/aiframe/libtransformer_lite.so
+odm/lib64/oplusmss/libQnnHtp.so;MODULE_SUFFIX=.oplusmss
+odm/lib64/oplusmss/libQnnHtpPrepare.so;MODULE_SUFFIX=.oplusmss
+odm/lib64/oplusmss/libQnnHtpV75Stub.so;MODULE_SUFFIX=.oplusmss
+odm/lib64/oplusmss/libQnnSystem.so;MODULE_SUFFIX=.oplusmss
+odm/lib64/oplusmss/libaiboost.so;MODULE_SUFFIX=.oplusmss
+odm/lib64/oplusmss/libaiboost_qnn_external_delegate.so;MODULE_SUFFIX=.oplusmss;FIX_SONAME
 odm/lib64/libQnnCpu.so
 odm/lib64/libQnnGpu.so
 odm/lib64/libQnnHtp.so
@@ -1696,8 +1686,8 @@ odm/lib64/libaiboost_ubwc.so
 odm/lib64/libhta_hexagon_runtime_snpe.so
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_23867:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_23867:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN220.conf_23851:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_23851:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # OPLUS Display
@@ -1730,13 +1720,15 @@ odm/etc/sensor/config/giulia_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lanai_mtp_alsps.json
 odm/etc/sensor/config/lanai_mtp_alsps_hw_tcs3720.json
-odm/etc/sensor/config/lanai_mtp_bmp5_0.json
 odm/etc/sensor/config/lanai_mtp_cct_rear.json
 odm/etc/sensor/config/lanai_mtp_freefall.json
 odm/etc/sensor/config/lanai_mtp_icm456xx_0.json
 odm/etc/sensor/config/lanai_mtp_mmc56x3x.json
+odm/etc/sensor/config/lanai_mtp_oplus_flight_scene.json
 odm/etc/sensor/config/lanai_mtp_oplus_lay.json
 odm/etc/sensor/config/lanai_mtp_oplus_measurement.json
+odm/etc/sensor/config/lanai_mtp_oplus_rotation_detect.json
+odm/etc/sensor/config/lanai_mtp_oplus_sleep.json
 odm/etc/sensor/config/lanai_mtp_oplus_smart_prox.json
 odm/etc/sensor/config/lanai_mtp_pocket.json
 odm/etc/sensor/config/lux_aod.json
@@ -1790,10 +1782,7 @@ vendor/firmware/vpu33_4v.mbn
 vendor/firmware/vpu33_4v_unsigned.mbn
 
 # WiFi
-odm/etc/wifi/kiwi/bdwlan.b0a
 odm/etc/wifi/kiwi/bdwlan.b0c
-odm/etc/wifi/kiwi/bdwlan.b0e
-odm/etc/wifi/kiwi/bdwlan.b0i
 odm/etc/wifi/kiwi/bdwlan.elf
 odm/etc/wifi/kiwi/regdb.bin
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
