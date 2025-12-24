@@ -34,20 +34,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    FrameworksResEuicc_EU \
-    FrameworksResEuicc_NA \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     OPlusWifiResTarget
-
-# Regional properties
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/build.ROW.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/build.NA.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/build.default.prop
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 35
@@ -55,14 +46,6 @@ PRODUCT_SHIPPING_API_LEVEL := 35
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Telephony
-PRODUCT_PACKAGES += \
-    OplusEsimSwitcher \
-    OplusEuicc
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # Touch features
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
@@ -83,4 +66,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/oneplus/sm8650-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/giulia/giulia-vendor.mk)
+$(call inherit-product, vendor/oneplus/giuliac/giuliac-vendor.mk)

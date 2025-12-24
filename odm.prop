@@ -1,3 +1,2 @@
-# Regional properties
-ro.product.property_source_order=odm,vendor,product,system_ext,system
-import /odm/etc/build.default.prop
+# Radio
+ro.vendor.oplus.regionmark=CN
