@@ -10,7 +10,7 @@
     <item name="pixel_pitch" format="float" type="dimen">61.5</item>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">12dp</dimen>
+    <dimen name="status_bar_padding_start">72px</dimen>
 
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">1130px</dimen>
