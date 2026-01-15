@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23867/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/23867/build.EU.prop \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23867/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/23867/build.IN.prop \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23867/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/23867/build.NA.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23867/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/23867/build.ROW.prop \
     $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23867/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23867/build.default.prop
 
 # Shipping API
