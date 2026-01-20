@@ -1,0 +1,5 @@
+# Device info
+ro.product.odm.name=CPH2645
+
+# eSIM
+ro.vendor.oplus.radio.esim.feature=2
